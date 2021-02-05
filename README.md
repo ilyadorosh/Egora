@@ -1,4 +1,4 @@
-# Egora
+# Egora installation
 The Worldwide Stock-Market of Ideas
 
 Cloud Installation [Tutorial](https://engineering.paiza.io/entry/paizacloud_laravel)
