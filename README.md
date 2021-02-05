@@ -39,14 +39,6 @@ Go to php.ini in the php installation folder
 
 Remove the ; from ;extension=pdo_mysql.so
 
-register on Egora
-Either set up a mailing service (Mailgun), or change a database for your user entry
-```SQL
-use laravel;
-select * from users;
-update users set email_verified_at="2021-02-03 00:01:56";
-```
-
 
 ```nothing
 php artisan migrate
@@ -55,6 +47,15 @@ php artisan migrate:status
 
 php artisan migrate
 ```
+
+register on Egora
+Either set up a mailing service (Mailgun), or change a database for your user entry
+```SQL
+use laravel;
+select * from users;
+update users set email_verified_at="2021-02-03 00:01:56";
+```
+
 
 <a name="initial-configuration"></a>
 ## Initial Configuration
