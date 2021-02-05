@@ -2,7 +2,8 @@
 The Worldwide Stock-Market of Ideas
 
 #### The Laravel Installer
-Get [PHP](php.net).
+Get [PHP](https://php.net).
+
 Install Laravel with [Composer](https://getcomposer.org/):
 
 ```nothing
@@ -37,7 +38,7 @@ Go to php.ini in the php installation folder
 Remove the ; from ;extension=pdo_mysql.so
 
 register on Egora
-Either set up a mailing service, or change a database for your user entry
+Either set up a mailing service (Mailgun), or change a database for your user entry
 ```SQL
 use laravel;
 select * from users;
@@ -75,27 +76,27 @@ Your `.env` file should not be committed to your application's source control, s
 Now that you have created your Laravel project, you may be wondering what to learn next. First, we strongly recommend becoming familiar with how Laravel works by reading the following documentation:
 
 - [Request Lifecycle](https://laravel.com/docs/6.x/lifecycle)
-- [Configuration](/docs/{{version}}/configuration)
-- [Directory Structure](/docs/{{version}}/structure)
-- [Service Container](/docs/{{version}}/container)
-- [Facades](/docs/{{version}}/facades)
+- [Configuration](https://laravel.com/docs/6.x/configuration)
+- [Directory Structure](https://laravel.com/docs/6.x/structure)
+- [Service Container](https://laravel.com/docs/6.x/container)
+- [Facades](https://laravel.com/docs/6.x/facades)
 
 How you want to use Laravel will also dictate the next steps on your journey. There are a variety of ways to use Laravel, and we'll explore two primary use cases for the framework below.
 
 <a name="laravel-the-fullstack-framework"></a>
 ### Laravel The Full Stack Framework
 
-Laravel may serve as a full stack framework. By "full stack" framework we mean that you are going to use Laravel to route requests to your application and render your frontend via [Blade templates](/docs/{{version}}/blade) or using a single-page application hybrid technology like [Inertia.js](https://inertiajs.com). This is the most common way to use the Laravel framework.
+Laravel may serve as a full stack framework. By "full stack" framework we mean that you are going to use Laravel to route requests to your application and render your frontend via [Blade templates](https://laravel.com/docs/6.x/blade) or using a single-page application hybrid technology like [Inertia.js](https://inertiajs.com). This is the most common way to use the Laravel framework.
 
-If this is how you plan to use Laravel, you may want to check out our documentation on [routing](/docs/{{version}}/routing), [views](/docs/{{version}}/views), or the [Eloquent ORM](/docs/{{version}}/eloquent). In addition, you might be interested in learning about community packages like [Livewire](https://laravel-livewire.com) and [Inertia.js](https://inertiajs.com). These packages allow you to use Laravel as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
+If this is how you plan to use Laravel, you may want to check out our documentation on [routing](https://laravel.com/docs/6.x/routing), [views](https://laravel.com/docs/6.x/views), or the [Eloquent ORM](https://laravel.com/docs/6.x/eloquent). In addition, you might be interested in learning about community packages like [Livewire](https://laravel-livewire.com) and [Inertia.js](https://inertiajs.com). These packages allow you to use Laravel as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
 
-If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using [Laravel Mix](/docs/{{version}}/mix).
+If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using [Laravel Mix](https://laravel.com/docs/6.x/mix).
 
-> {tip} If you want to get a head start building your application, check out one of our official [application starter kits](/docs/{{version}}/starter-kits).
+> {tip} If you want to get a head start building your application, check out one of our official [application starter kits](https://laravel.com/docs/6.x/starter-kits).
 
 <a name="laravel-the-api-backend"></a>
 ### Laravel The API Backend
 
-Laravel may also serve as an API backend to a JavaScript single-page application or mobile application. For example, you might use Laravel as an API backend for your [Next.js](https://nextjs.org) application. In this context, you may use Laravel to provide [authentication](/docs/{{version}}/sanctum) and data storage / retrieval for your application, while also taking advantage of Laravel's powerful services such as queues, emails, notifications, and more.
+Laravel may also serve as an API backend to a JavaScript single-page application or mobile application. For example, you might use Laravel as an API backend for your [Next.js](https://nextjs.org) application. In this context, you may use Laravel to provide [authentication](https://laravel.com/docs/6.x/sanctum) and data storage / retrieval for your application, while also taking advantage of Laravel's powerful services such as queues, emails, notifications, and more.
 
-If this is how you plan to use Laravel, you may want to check out our documentation on [routing](/docs/{{version}}/routing), [Laravel Sanctum](/docs/{{version}}/sanctum), and the [Eloquent ORM](/docs/{{version}}/eloquent).
+If this is how you plan to use Laravel, you may want to check out our documentation on [routing](/docs/{{version}}/routing), [Laravel Sanctum](https://laravel.com/docs/6.x/sanctum), and the [Eloquent ORM](https://laravel.com/docs/6.x/eloquent).
