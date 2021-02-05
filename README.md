@@ -27,7 +27,7 @@ rename .env.example to .env
  ```php
         //URL::forceScheme(env('FORCE_SCHEME', 'https'));
 ```
-### Install MariaDB
+### Install [MariaDB](https://mariadb.org/)
 ```SQL
 create database laravel;
 ```
