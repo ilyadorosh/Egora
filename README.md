@@ -18,9 +18,9 @@ php artisan serve
 rename .env.example to .env
 
 ### If the images URLs are missing a protocol:
- open Egora\app\ProvidersAppServiceProvider.php
+ open Egora\app\Providers\AppServiceProvider.php
  
- boot() function
+ in the boot() function
  
  comment out this line
  ```php
@@ -67,7 +67,7 @@ Since many of Laravel's configuration option values may vary depending on whethe
 
 Your `.env` file should not be committed to your application's source control, since each developer / server using your application could require a different environment configuration. Furthermore, this would be a security risk in the event an intruder gains access to your source control repository, since any sensitive credentials would get exposed.
 
-> {tip} For more information about the `.env` file and environment based configuration, check out the full [configuration documentation](/docs/{{version}}/configuration#environment-configuration).
+> {tip} For more information about the `.env` file and environment based configuration, check out the full [configuration documentation](https://github.com/laravel/docs/{{version}}/configuration#environment-configuration).
 
 <a name="next-steps"></a>
 ## Next Steps
@@ -75,7 +75,7 @@ Your `.env` file should not be committed to your application's source control, s
 Now that you have created your Laravel project, you may be wondering what to learn next. First, we strongly recommend becoming familiar with how Laravel works by reading the following documentation:
 
 <div class="content-list" markdown="1">
-- [Request Lifecycle](/docs/{{version}}/lifecycle)
+- [Request Lifecycle](https://github.com/laravel/docs/{{version}}/lifecycle)
 - [Configuration](/docs/{{version}}/configuration)
 - [Directory Structure](/docs/{{version}}/structure)
 - [Service Container](/docs/{{version}}/container)
