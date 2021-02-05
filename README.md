@@ -1,7 +1,9 @@
 # Egora
 The Worldwide Stock-Market of Ideas
 
-#### The Laravel Installer
+Cloud Installation [Tutorial](https://engineering.paiza.io/entry/paizacloud_laravel)
+
+### Or
 Get [PHP](https://php.net).
 
 Install Laravel with [Composer](https://getcomposer.org/):
@@ -91,12 +93,3 @@ Laravel may serve as a full stack framework. By "full stack" framework we mean t
 If this is how you plan to use Laravel, you may want to check out our documentation on [routing](https://laravel.com/docs/6.x/routing), [views](https://laravel.com/docs/6.x/views), or the [Eloquent ORM](https://laravel.com/docs/6.x/eloquent). In addition, you might be interested in learning about community packages like [Livewire](https://laravel-livewire.com) and [Inertia.js](https://inertiajs.com). These packages allow you to use Laravel as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
 
 If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using [Laravel Mix](https://laravel.com/docs/6.x/mix).
-
-> {tip} If you want to get a head start building your application, check out one of our official [application starter kits](https://laravel.com/docs/6.x/starter-kits).
-
-<a name="laravel-the-api-backend"></a>
-### Laravel The API Backend
-
-Laravel may also serve as an API backend to a JavaScript single-page application or mobile application. For example, you might use Laravel as an API backend for your [Next.js](https://nextjs.org) application. In this context, you may use Laravel to provide [authentication](https://laravel.com/docs/6.x/sanctum) and data storage / retrieval for your application, while also taking advantage of Laravel's powerful services such as queues, emails, notifications, and more.
-
-If this is how you plan to use Laravel, you may want to check out our documentation on [routing](/docs/{{version}}/routing), [Laravel Sanctum](https://laravel.com/docs/6.x/sanctum), and the [Eloquent ORM](https://laravel.com/docs/6.x/eloquent).
