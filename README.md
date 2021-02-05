@@ -83,6 +83,7 @@ First, we strongly recommend becoming familiar with how Laravel works by reading
 - [Facades](https://laravel.com/docs/6.x/facades)
 
 you are going to use Laravel to route requests to your application and render your frontend via [Blade templates](https://laravel.com/docs/6.x/blade)
+
 you may want to check out our documentation on [routing](https://laravel.com/docs/6.x/routing), [views](https://laravel.com/docs/6.x/views), or the [Eloquent ORM](https://laravel.com/docs/6.x/eloquent). 
 
 If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using [Laravel Mix](https://laravel.com/docs/6.x/mix).
