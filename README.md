@@ -3,7 +3,7 @@ The Worldwide Stock-Market of Ideas
 
 #### The Laravel Installer
 
-Or, you may install the Laravel Installer as a global Composer dependency:
+Install Laravel with Composer:
 
 ```nothing
 git clone https://github.com/CezaryJurewicz/Egora
@@ -21,22 +21,28 @@ rename .env.example to .env
 php artisan key:generate
 ```
 
-comment AppServiceProvider boot()
+ open Egora\app\ProvidersAppServiceProvider.php
+ boot() function
+ comment out this line
+ ```php
         //URL::forceScheme(env('FORCE_SCHEME', 'https'));
+```
+Install MariaDB
+```SQL
+use laravel;
+select * from users;
+update users set email_verified_at="2021-02-03 00:01:56";
+```
 
 php.ini Remove the ; from ;extension=pdo_mysql.so
 
 ```nothing
 php artisan migrate
+
+php artisan migrate:status
+
+php artisan migrate
 ```
-
-Make sure to place Composer's system-wide vendor bin directory in your `$PATH` so the `laravel` executable can be located by your system. This directory exists in different locations based on your operating system; however, some common locations include:
-
-<div class="content-list" markdown="1">
-- macOS: `$HOME/.composer/vendor/bin`
-- Windows: `%USERPROFILE%\AppData\Roaming\Composer\vendor\bin`
-- GNU / Linux Distributions: `$HOME/.config/composer/vendor/bin` or `$HOME/.composer/vendor/bin`
-</div>
 
 <a name="initial-configuration"></a>
 ## Initial Configuration
