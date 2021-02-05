@@ -73,10 +73,8 @@ Your `.env` file should not be committed to your application's source control, s
 
 > For more information about the `.env` file and environment based configuration, check out the full [configuration documentation](https://laravel.com/docs/6.x/configuration#environment-configuration).
 
-<a name="next-steps"></a>
 ## Next Steps
-
-Now that you have created your Laravel project, you may be wondering what to learn next. First, we strongly recommend becoming familiar with how Laravel works by reading the following documentation:
+First, we strongly recommend becoming familiar with how Laravel works by reading the following documentation:
 
 - [Request Lifecycle](https://laravel.com/docs/6.x/lifecycle)
 - [Configuration](https://laravel.com/docs/6.x/configuration)
@@ -84,13 +82,7 @@ Now that you have created your Laravel project, you may be wondering what to lea
 - [Service Container](https://laravel.com/docs/6.x/container)
 - [Facades](https://laravel.com/docs/6.x/facades)
 
-How you want to use Laravel will also dictate the next steps on your journey. There are a variety of ways to use Laravel, and we'll explore two primary use cases for the framework below.
-
-<a name="laravel-the-fullstack-framework"></a>
-### Laravel The Full Stack Framework
-
-Laravel may serve as a full stack framework. By "full stack" framework we mean that you are going to use Laravel to route requests to your application and render your frontend via [Blade templates](https://laravel.com/docs/6.x/blade) or using a single-page application hybrid technology like [Inertia.js](https://inertiajs.com). This is the most common way to use the Laravel framework.
-
-If this is how you plan to use Laravel, you may want to check out our documentation on [routing](https://laravel.com/docs/6.x/routing), [views](https://laravel.com/docs/6.x/views), or the [Eloquent ORM](https://laravel.com/docs/6.x/eloquent). In addition, you might be interested in learning about community packages like [Livewire](https://laravel-livewire.com) and [Inertia.js](https://inertiajs.com). These packages allow you to use Laravel as a full-stack framework while enjoying many of the UI benefits provided by single-page JavaScript applications.
+you are going to use Laravel to route requests to your application and render your frontend via [Blade templates](https://laravel.com/docs/6.x/blade)
+you may want to check out our documentation on [routing](https://laravel.com/docs/6.x/routing), [views](https://laravel.com/docs/6.x/views), or the [Eloquent ORM](https://laravel.com/docs/6.x/eloquent). 
 
 If you are using Laravel as a full stack framework, we also strongly encourage you to learn how to compile your application's CSS and JavaScript using [Laravel Mix](https://laravel.com/docs/6.x/mix).
