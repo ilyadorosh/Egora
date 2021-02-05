@@ -6,13 +6,28 @@ The Worldwide Stock-Market of Ideas
 Or, you may install the Laravel Installer as a global Composer dependency:
 
 ```nothing
-composer global require laravel/installer
+git clone https://github.com/CezaryJurewicz/Egora
 
-laravel new example-app
+cd Egora
 
-cd example-app
+composer update
 
 php artisan serve
+```
+
+rename .env.example to .env
+
+```nothing
+php artisan key:generate
+```
+
+comment AppServiceProvider boot()
+        //URL::forceScheme(env('FORCE_SCHEME', 'https'));
+
+php.ini Remove the ; from ;extension=pdo_mysql.so
+
+```nothing
+php artisan migrate
 ```
 
 Make sure to place Composer's system-wide vendor bin directory in your `$PATH` so the `laravel` executable can be located by your system. This directory exists in different locations based on your operating system; however, some common locations include:
@@ -72,3 +87,8 @@ Laravel may also serve as an API backend to a JavaScript single-page application
 
 If this is how you plan to use Laravel, you may want to check out our documentation on [routing](/docs/{{version}}/routing), [Laravel Sanctum](/docs/{{version}}/sanctum), and the [Eloquent ORM](/docs/{{version}}/eloquent).
 
+```nothing
+composer global require laravel/installer
+
+laravel new example-app
+```
