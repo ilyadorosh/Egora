@@ -17,24 +17,33 @@ php artisan serve
 
 rename .env.example to .env
 
-```nothing
-php artisan key:generate
-```
-
+### If the images URLs are missing a protocol:
  open Egora\app\ProvidersAppServiceProvider.php
+ 
  boot() function
+ 
  comment out this line
  ```php
         //URL::forceScheme(env('FORCE_SCHEME', 'https'));
 ```
-Install MariaDB
+### Install MariaDB
+```SQL
+create database laravel;
+```
+
+### If there's a DB driver issue:
+Go to php.ini in the php installation folder
+
+Remove the ; from ;extension=pdo_mysql.so
+
+register on Egora
+Either set up a mailing service, or change a database for your user entry
 ```SQL
 use laravel;
 select * from users;
 update users set email_verified_at="2021-02-03 00:01:56";
 ```
 
-php.ini Remove the ; from ;extension=pdo_mysql.so
 
 ```nothing
 php artisan migrate
@@ -92,9 +101,3 @@ If you are using Laravel as a full stack framework, we also strongly encourage y
 Laravel may also serve as an API backend to a JavaScript single-page application or mobile application. For example, you might use Laravel as an API backend for your [Next.js](https://nextjs.org) application. In this context, you may use Laravel to provide [authentication](/docs/{{version}}/sanctum) and data storage / retrieval for your application, while also taking advantage of Laravel's powerful services such as queues, emails, notifications, and more.
 
 If this is how you plan to use Laravel, you may want to check out our documentation on [routing](/docs/{{version}}/routing), [Laravel Sanctum](/docs/{{version}}/sanctum), and the [Eloquent ORM](/docs/{{version}}/eloquent).
-
-```nothing
-composer global require laravel/installer
-
-laravel new example-app
-```
