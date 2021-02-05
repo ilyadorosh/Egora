@@ -2,8 +2,8 @@
 The Worldwide Stock-Market of Ideas
 
 #### The Laravel Installer
-
-Install Laravel with Composer:
+Get [PHP](php.net).
+Install Laravel with [Composer](https://getcomposer.org/):
 
 ```nothing
 git clone https://github.com/CezaryJurewicz/Egora
