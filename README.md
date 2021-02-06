@@ -35,7 +35,7 @@ create database laravel;
 ```
 
 ### If there's a DB driver issue:
-Go to `php.ini` in the php installation folder
+Go to `php.ini` in your php installation folder
 
 Remove the `;` from `;extension=pdo_mysql.so`
 
