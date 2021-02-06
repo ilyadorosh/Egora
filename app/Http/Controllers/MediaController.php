@@ -56,16 +56,16 @@ class MediaController extends Controller
             $hash = sha1_file($file->path());
 
             $extention = $file->getClientOriginalExtension();
-            $storage_disk = env('STORAGE_DISK','local');
+            $storage_disk = env('STORAGE_DISK');
             $filename = uniqid().".$extention";
 
             $imported = Media::where('hash', $hash)->first();
             if (is_null($imported)) {
-                Storage::disk($storage_disk)->makeDirectory('public'.DIRECTORY_SEPARATOR.$request->type);
-                if (Storage::disk($storage_disk)->putFileAs('public'.DIRECTORY_SEPARATOR.$request->type, $file, $filename)) {
-                    Storage::disk($storage_disk)->setVisibility('public'.DIRECTORY_SEPARATOR.$request->type.DIRECTORY_SEPARATOR.$filename, 'public'); 
+                Storage::disk($storage_disk)->makeDirectory($request->type);
+                if (Storage::disk($storage_disk)->putFileAs($request->type, $file, $filename)) {
+                    Storage::disk($storage_disk)->setVisibility($request->type.DIRECTORY_SEPARATOR.$filename, 'public'); 
                     $data = [
-                        'filename' => 'public'.DIRECTORY_SEPARATOR.$request->type.DIRECTORY_SEPARATOR.$filename,
+                        'filename' => $request->type.DIRECTORY_SEPARATOR.$filename,
                         'original_name' => $file->getClientOriginalName(),
                         'hash' => $hash,
                         'mime' => $file->getClientMimeType(),

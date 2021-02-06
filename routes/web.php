@@ -35,7 +35,7 @@ Route::middleware(['verified', 'auth:admin,web'])->group(function() {
     });
     
     Route::prefix('/media')->name('media.')->group(function(){
-        Route::post('/store/{user}', 'MediaController@store')->name('store')->middleware('can:create,App\Media,user');
+        Route::post('/store/', 'MediaController@store')->name('store');
         Route::post('/verification', 'MediaController@verification')->name('verification')->middleware('can:verification,App\Media');
         Route::delete('/{media}', 'MediaController@destroy')->name('delete')->middleware('can:delete,media');
     });

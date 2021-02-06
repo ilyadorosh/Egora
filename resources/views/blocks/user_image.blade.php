@@ -13,8 +13,8 @@
                                 </form>
                                 @endif
                             @else
-                                @if (auth('web')->check() && auth('web')->user()->can('create', [App\Media::class, $user]) )
-                                <form action="{{ route('media.store', $user) }}" method="POST" enctype="multipart/form-data">
+                               
+                                <form action="{{ route('media.store') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="input-group">
                                         <input type="file" name="file" id="file" style="overflow: hidden;"/>
@@ -22,5 +22,4 @@
                                     </div>
                                     <button type='submit' class='btn btn-sm btn-primary mt-2'>{{__('some.Upload')}}</button>
                                 </form>
-                                @endif
                             @endif          
