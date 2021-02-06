@@ -21,9 +21,9 @@ php artisan serve
 rename .env.example to .env
 
 ### If the images URLs are missing a protocol:
- open Egora\app\Providers\AppServiceProvider.php
+ open `Egora\app\Providers\AppServiceProvider.php`
  
- in the boot() function
+ in the `boot()` function
  
  comment out this line
  ```php
