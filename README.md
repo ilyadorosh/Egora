@@ -1,10 +1,10 @@
 # Egora installation
-The Worldwide Stock-Market of Ideas
+Contribute to The Worldwide Stock-Market of Ideas!
 
 Cloud Installation [Tutorial](https://engineering.paiza.io/entry/paizacloud_laravel)
 
 ### Or
-Get [PHP](https://php.net).
+Get [PHP](https://php.net) `7.4`, not `8`.
 
 Install Laravel with [Composer](https://getcomposer.org/):
 
@@ -35,9 +35,9 @@ create database laravel;
 ```
 
 ### If there's a DB driver issue:
-Go to php.ini in the php installation folder
+Go to `php.ini` in the php installation folder
 
-Remove the ; from ;extension=pdo_mysql.so
+Remove the `;` from `;extension=pdo_mysql.so`
 
 
 ```nothing
