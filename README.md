@@ -2,6 +2,7 @@
 Contribute to The Worldwide Stock-Market of Ideas!
 
 ![](vectorpaint.svg)
+
 Cloud Installation [Tutorial](https://engineering.paiza.io/entry/paizacloud_laravel)
 
 ### Or
